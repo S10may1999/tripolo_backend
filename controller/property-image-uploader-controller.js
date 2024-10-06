@@ -27,11 +27,13 @@ const propertyImageAndVideoUpload = async (req, res) => {
       );
   
       if (!result) {
+        console.log("update failed");
         return res.status(500).json({ message: "Update failed!" });
       }
-  
+      console.log("image uploaded successfully !!");
       res.status(201).json({ message: "Images or videos uploaded successfully!" });
     } catch (err) {
+      console.log("Something went wrong: ",err);
       res.status(500).json({ message: "Something went wrong!", error: err });
     }
   };

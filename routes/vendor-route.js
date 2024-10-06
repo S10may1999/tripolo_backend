@@ -5,6 +5,6 @@ const route=express.Router();
 
 
 route.post("/vendor-details-post",vendorDetailsPost.vendorDetailsPost );
-
+route.post("/vendor-login",vendorDetailsPost.VendorLogin);
 
 module.exports=route;
