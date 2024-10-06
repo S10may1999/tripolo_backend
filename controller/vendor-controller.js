@@ -1,6 +1,5 @@
 const vendorModel=require("../schema/vendor-schema");
 const jwt=require("jsonwebtoken");
-const admin=require("../db-config/firebase-config");
 const twilio=require("twilio");
 const sid=process.env.SID;
 const auth_token=process.env.AUTH_TOKEN;
